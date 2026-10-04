@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tem Table task 2</title>
+</head>
+
+<style>
+   * {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+       
+    }
+
+    .maincon{
+
+        width: 700px;
+        height: 100%;
+        margin: auto;
+        margin-top: 40px;
+        border: 1px solid black;
+    }
+
+    nav{
+        width:100%;
+        height: 10vh;
+        background-color: rgba(49, 50, 220);
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con{
+        width: 90%;
+        height: auto;
+        /* background-color: bisque; */
+        margin:auto;
+        /* margin-top: 50px; */
+        border: 1px solid black;
+    }
+
+    p{
+        /* margin-top: 30px; */
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(115, 115, 115);
+    }
+
+    table{
+        /* margin: auto; */
+        width: 100%;
+        /* align-items: center; */
+        border: 2px solid black;
+        border-collapse:collapse;
+    }
+
+    th {
+        padding: 15px;
+        border: 2px solid black;
+        border-collapse:collapse;
+        background-color:rgba(174, 174, 174);
+    }
+
+    td{
+        border: 2px solid black;
+        padding: 15px;
+        border-collapse:collapse;
+    }
+
+    footer{
+        font-size: 18px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: rgba(125, 158, 227);
+        height: 10vh;
+        /* margin-top: 55px; */
+        font-weight: 600;
+    }
+
+    
+       @media screen and (max-width:730px)
+{
+    .maincon {
+        width: 90%;
+        /* margin: auto; */
+        /* margin-top: 40px; */
+    }
+
+    /* .con {
+      width: 90%; 
+         height: 80%; 
+    } */
+
+    p {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    table {
+        /* width: 100%; */
+        font-size: 10px;
+    }
+
+    th {
+        padding: 6px;
+    }
+
+    td {
+        padding: 6px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    
+}
+@media screen and (max-width:390px)
+{
+    table{
+        /* width: 100%; */
+        font-size: 7px;
+    }
+}
+        
+    
+
+</style>
+
+<body>
+
+<div class="maincon">
+
+    <nav>
+        <header>Welcome to VTNF</header>
+    </nav>
+
+    
+
+    <div class="con">
+
+        <p><br><br>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+        <br>
+        <br>
+        <h3>Student Mark List</h3>
+
+        <table>
+
+            <tr>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Tamil</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social Science</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Jegan</td>
+                <td>90</td>
+                <td>78</td>
+                <td>35</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Nathiya</td>
+                <td>50</td>
+                <td>45</td>
+                <td>30</td>
+                <td>80</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Annapoorani</td>
+                <td>40</td>
+                <td>50</td>
+                <td>60</td>
+                <td>90</td>
+                <td>80</td>
+            </tr>
+
+        </table>
+        <br>
+        <br>
+
+    </div>
+
+<!-- <br> -->
+
+    <footer>copyright@2026 vtnf.com</footer>
+
+</div>
+
+</body>
+</html>

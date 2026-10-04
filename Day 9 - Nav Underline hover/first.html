@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon.jpg" type="img/x-icon">
+    <title>CHAHAM</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+
+        }
+        nav{
+            width: 100%;
+            height: 10vh;
+            background-color: brown;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+
+        .logo{
+            font-size: 25px;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: gold;
+            margin-left: 45px;
+
+        }
+        .ulists{
+            width: 700px;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .li{
+           list-style-type: none;
+           margin-left: 25px;
+           padding: 5px 15px;
+        }
+        .link{
+             text-decoration: none;
+             color:gold;
+             font-size: 22px;
+             position: relative;
+        }
+        .link::before{
+            content: "";
+            background-color:bisque;
+            height: 4px;
+            position: relative;
+            display:inline-block;
+            bottom: -35px;
+            width: 0%;
+            transition: all 0.5s linear 0s;
+        }
+        .link:hover::before{
+            width: 100%;
+        }
+        @media screen and (max-width:850px) {
+            nav{
+                position: relative;
+            }
+            .ulists{
+              position: absolute;
+              top: 10vh;
+              width: 100%;
+              height: auto;
+              display: block;
+              background-color:darkslategrey;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">CHAHAM</div>
+        <ul class="ulists">
+            <li class="li"><a href="" class="link">HOME</a></li>
+            <li class="li"><a href="" class="link">PRODUCTS</a></li>
+            <li class="li"><a href="" class="link">SERVICES</a></li>
+            <li class="li"><a href="" class="link">CONTACT</a></li>
+        </ul>
+    </nav>
+  
+
+</body>
+</html>

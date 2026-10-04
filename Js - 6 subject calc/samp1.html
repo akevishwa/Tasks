@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC</title>
+    <style>
+        .con{
+            display: flex;
+            justify-content: space-around;
+            background-color: darksalmon;
+            /* height: ; */
+        }
+
+        .left{
+            width: 40%;
+            /* height: 10vh; */
+            /* background-color: deepskyblue; */
+            
+        }
+        #Result{
+            width: 300px;
+            height: 250px;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        button{
+            height: 35px;
+            width: 70px;
+            color: green;
+            background-color:cornsilk;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+ 
+    <div class="con">
+
+        <div class="left">
+            <h1>Fill The Details</h1>
+<label style="color: red;">Username : </label>
+<input type="text" id="uname">
+
+<br>
+<br>
+<br>
+<br>
+
+<label>Tamil : </label>
+<input type="text" id="tamil" >
+<br>
+<br>
+<label>English : </label>
+<input type="text" id="english">
+<br>
+<br>
+<label>Maths : </label>
+<input type="text" id="maths">
+<br>
+<br>
+<label>Science : </label>
+<input type="text" id="science">
+<br>
+<br>
+<label>Social : </label>
+<input type="text" id="social">
+<br>
+<br>
+<br>
+
+<button type = "button" onclick="calculation()">Get</button>
+        </div>
+    <div id="Result">
+       <h2>RESULT</h2>
+    </div>
+</div>
+
+<script>
+
+       function calculation(){
+            let username = document.getElementById("uname").value;
+            let tamil = Number(document.getElementById("tamil").value);
+            let english = Number(document.getElementById("english").value);
+            let maths = Number(document.getElementById("maths").value);
+            let science = Number(document.getElementById("science").value);
+            let social = Number(document.getElementById("social").value);
+
+            let subs = 5;
+            let sumtotal = tamil + english + maths + science + social;
+            
+            let avg = sumtotal / subs;
+
+
+            let percentage = (sumtotal/500)*100;
+
+            let grade;
+
+            
+
+            // document.write("Total Marks : "+ sumtotal);
+            // document.write("Average : "+ avg);
+            // document.write("Percentage : "+ percentage+"%");
+
+
+            if(percentage >= 90 && percentage <= 100)
+            {
+                grade = "Grade A";
+            }
+            else if(percentage >= 75 && percentage < 90)
+            {
+                 grade = "Grade B";
+            }
+            else if(percentage >= 50 && percentage < 75)
+            {
+               grade = "Grade C";
+
+            }
+            else if(percentage < 50){
+               grade = "Grade U - fail";
+            }
+
+            document.getElementById("Result").innerHTML = "Name : " + username + "<br>" +"<br>" +"Total Marks: "+sumtotal + "<br>" + "Average:" + avg + "<br>" + "Percentage:"+ percentage +"%<br>" + "Grade : "+grade;
+
+
+       }
+
+
+</script>
+</body>
+</html>

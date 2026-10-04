@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAHAM</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+            /* background-color:beige; */
+           
+        } 
+        #con
+        {
+            display: flex;
+            /* margin: auto; */
+            /* /* margin-left: 600px; */
+            margin-top: 100px;
+            /* background-color: darkseagreen; */
+            width: 100%; 
+             height: 100%;
+            text-align: center;
+            border-radius: 5px;
+            justify-content: space-around;
+            /* justify-content: center; */
+            
+        }
+        #form1{
+            width: 350px;
+            background-color: coral;
+            height: 100%;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .box{
+            margin-left: 20px;
+            border-radius: 5px;
+            height: 25px;
+            width: 170px;
+        }
+        button{
+            height: 30px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: greenyellow;
+        }
+        #Result{
+            height: 362px;
+            width: 349px;
+            background-color:bisque;
+            /* flex-shrink: 0; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            border-radius: 10px;
+            
+        }
+        #heading1{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            background-color:darkviolet;
+            color:ghostwhite;
+        }
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <h1 id="heading1">RESULT LOGIN</h1>
+    <div id="con">
+    <form id="form1"> 
+    <h1>STUDENT FORM</h1>
+    <br>
+    <br>
+
+
+    <label>Student Name   :</label>
+    <input type="text" id="stuname" class="box">
+    <br>
+     <br>
+    <label>Student ID :</label>
+    <input type="text" id="stuid" class="box">
+ <br>
+  <br>
+    <label>Email :</label>
+    <input type="email" id="mail" class="box">
+ <br>
+  <br>
+    <label>Department :</label>
+                                                     <!-- I HAVE TO PUT SELECT OPTION FOT THIS INPUT -->
+    <input type="text" id="depart" class="box">       
+ <br>
+  <br>
+    <label>Mark :</label>
+    <input type="number" id="mark" class="box">
+    <br>
+    <br>
+    <br>
+   
+    <button type ="button" onclick = "collect()">Enter</button>
+    <br>
+    <br>
+    </form>
+    
+    <div id="Result"><h2>
+        STUDENT RESULT</h2>
+    
+    </div>
+    </div>
+    
+
+
+
+   <script>
+           
+           function collect()
+           {
+                 let stuname1 = document.getElementById("stuname").value;
+                  let stuid1 = document.getElementById("stuid").value;
+                   let mail1 = document.getElementById("mail").value;
+                    let depart1 =document.getElementById("depart").value;
+                     let mark1 = Number(document.getElementById("mark").value);
+
+
+                     stuname2 = stuname1.trim();
+                    //  stuid2 = stuid1.startsWith("STU");
+                    let grade;
+                    let result;
+                    let ellevel;
+                    let emcheck;
+                    let stuidcheck;
+                    let performance;
+                    let switchmesg;
+                    
+                     
+
+                     if(stuname1 =="" || stuid1 ==""|| mail1 ==""||depart1 ==""||mark1 =="")
+                     {
+                        alert("Fill the All Details")
+                        return;
+                     }
+                     if(!stuid1.startsWith("STU")||stuid1.length!=6)
+                     {
+                        alert("The ID is Wrong , Give Correctly");
+                        return;
+                     }
+                     else{
+                        stuidcheck = "Valid";
+                     }
+                     
+                     if(!mail1.includes("@") || !mail1.includes("."))
+                     {
+                        alert("Give Mail id Correctly ");
+                        return;
+                     }
+                     else{
+                        emcheck = "Valid";
+                     }
+
+                     if(mark1 > 100 || mark1 < 0)
+                     {
+                        alert("Invalid Mark");
+                        return;
+                     }
+                     if(mark1 >= 90 && mark1 <=100)
+                     {
+                         grade = "A+";
+                     }
+                     else if(mark1 >= 80 && mark1 <= 89)
+                     {
+                         grade = "A";
+                     }
+                     else if(mark1 >= 70 && mark1 <= 79)
+                     {
+                        grade = "B";
+                     }
+                     else if(mark1 >= 60 && mark <= 69)
+                     {
+                        grade = "C";
+                     }
+                     else if(mark1 >= 50 && mark1 <= 59)
+                     {
+                        grade = "D";
+                     }
+                     else{
+                        grade = "F";
+                     }
+
+                     if(mark1 >= 50)
+                     {
+                        result = "PASS";
+                     }
+                     else{
+                        result = "FAIL";
+                     }
+
+                     if(mark1 >= 60 && emcheck == "Valid" && stuidcheck == "Valid")
+                     {
+                        ellevel = "Eligible for Next Level"
+                     }
+                     else{
+                        ellevel = "Not Eligible";
+                     }
+
+                     switch (depart1)
+                     {
+                        case "JAVA":
+                            switchmesg = "JAVA - Adv java & Sping boot"
+                            break;
+
+                        case "PYTHON":
+                            switchmesg = "Python FS - Django & REST API"
+                            break;
+
+                        case "MERN":
+                            switchmesg = "MERN Stack - JS & Db"
+                            break;
+                        
+                        case "DATA ANALYTICS":
+                           switchmesg  = "Data Analytics -SQl & Python..."
+                            break;
+
+                     }
+
+                     performance = mark1 >= 80 ?  "Excellent" : mark1 >= 60 ? "Good" : "Needs Improvement"; 
+
+
+
+                    
+
+                    //  console.log(stuname2 , stuid1 , mail1 ,depart1,mark1,grade,result,ellevel,performance);
+
+                    document.getElementById("Result").innerHTML = "Name : " +stuname2 +"<br>"+ "Student ID : "+stuid1+"<br>"+"Email :"+mail1+"<br>"+"Department :"+depart1+"<br>"+"Recommended Course :"+switchmesg+"<br>"+"Mark :"+mark1+"<br>"+"Grade :"+grade+"<br>"+"Result :"+result+"<br>"+"Performance :"+performance+"<br>"+"Eligibility Level :"+ellevel+"<br>"
+
+
+             
+           }
+
+        //   console.log(stuname , stuid , mail ,depart,mark)
+
+
+   </script>
+
+  
+
+    
+</body>
+</html>

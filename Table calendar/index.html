@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Calender</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* background-color: cornsilk; */
+        }
+
+        
+
+        h1{
+            /*  margin: auto; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            background-color:midnightblue;
+            height: 10vh;
+            color: whitesmoke;
+        }
+
+        .totalcon{
+            width: 700px;
+            height: 600px;
+            background-color: bisque;
+            display:flex; 
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: auto;
+            margin-top:40px;
+
+        }
+        .con1{
+            height:200px;
+            width: 150px;
+            background-color:darksalmon;
+            
+            
+        }
+        h2{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+        #head1{
+            background-color: darkorchid;
+            color: whitesmoke;
+        }
+
+
+
+        #tab1{
+           margin: auto;
+        }
+
+        .con2{
+            height:200px;
+            width: 150px;
+            background-color:cyan;
+        }
+        #tab2{
+            margin: auto;
+        }
+        #head2{
+            background-color:crimson;
+            color: whitesmoke;
+        }
+       
+                .con3{
+            height:200px;
+            width:150px;
+            background-color:lightcyan;
+        }
+
+        #tab3{
+            margin:auto;
+        }
+
+        #head3{
+            background-color:cyan;
+            color:whitesmoke;
+        }
+
+
+        .con4{
+            height:200px;
+            width:150px;
+            background-color:lightgreen;
+        }
+
+        #tab4{
+            margin:auto;
+        }
+
+        #head4{
+            background-color:brown;
+            color:whitesmoke;
+        }
+
+
+        .con5{
+            height:200px;
+            width:150px;
+            background-color:plum;
+        }
+
+        #tab5{
+            margin:auto;
+        }
+
+        #head5{
+            background-color:violet;
+            color:whitesmoke;
+        }
+
+
+        .con6{
+            height:200px;
+            width:150px;
+            background-color:lightpink;
+        }
+
+        #tab6{
+            margin:auto;
+        }
+
+        #head6{
+            background-color:hotpink;
+            color:whitesmoke;
+        }
+
+
+        .con7{
+            height:200px;
+            width:150px;
+            background-color:lavender;
+        }
+
+        #tab7{
+            margin:auto;
+        }
+
+        #head7{
+            background-color:mediumpurple;
+            color:whitesmoke;
+        }
+
+
+        .con8{
+            height:200px;
+            width:150px;
+            background-color:lightskyblue;
+        }
+
+        #tab8{
+            margin:auto;
+        }
+
+        #head8{
+            background-color:royalblue;
+            color:whitesmoke;
+        }
+
+
+        .con9{
+            height:200px;
+            width:150px;
+            background-color:cornflowerblue;
+        }
+
+        #tab9{
+            margin:auto;
+        }
+
+        #head9{
+            background-color:peachpuff;
+            color:black;
+        }
+
+
+        .con10{
+            height:200px;
+            width:150px;
+            background-color:darkorange;
+        }
+
+        #tab10{
+            margin:auto;
+        }
+
+        #head10{
+            background-color:deeppink;
+            color:whitesmoke;
+        }
+
+
+        .con11{
+            height:200px;
+            width:150px;
+            background-color:lightgreen;
+        }
+
+        #tab11{
+            margin:auto;
+        }
+
+        #head11{
+            background-color:dodgerblue;
+            color:whitesmoke;
+        }
+
+
+        .con12{
+            height:200px;
+            width:150px;
+            background-color:plum;
+        }
+
+        #tab12{
+            margin:auto;
+        }
+
+        #head12{
+            background-color:darkviolet;
+            color:whitesmoke;
+        }
+
+        body{
+            background-image: url(./bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Calendar</h1>
+    <!-- <br>
+    <br> -->
+    
+<div class="totalcon">
+
+    <div class="con1">
+        <h2>January</h2>
+        <br>
+    <table id="tab1">
+        <tr id="head1">
+            <th>S </th>
+            <th>M </th>
+            <th>T </th>
+            <th>W </th>
+            <th>T </th>
+            <th>F </th>
+            <th>S </th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>1 </td>
+            <td>2 </td></tr>
+           <tr> 
+            <td>3 </td>
+            <td>4 </td>
+            <td>5 </td>
+            <td>6 </td>
+            <td>7 </td>
+            <td>8 </td>
+            <td>9 </td></tr>
+<tr>
+            <td>10 </td>
+            <td>11 </td>
+            <td>12 </td>
+            <td>13 </td>
+            <td>14 </td>
+            <td>15 </td>
+            <td>16 </td>
+
+            </tr>
+            <tr>
+
+            
+
+            <td>17 </td>
+            <td>18 </td>
+            <td>19 </td>
+            <td>20 </td>
+            <td>21 </td>
+            <td>22 </td>
+            <td>23 </td>
+
+            </tr>
+
+           
+           <tr>
+            <td>24 </td>
+            <td>25 </td>
+            <td>26 </td>
+            <td>27 </td>
+            <td>28 </td>
+            <td>29 </td>
+            <td>30 </td>
+
+           </tr>
+<tr>
+            <td>31 </td>
+
+</tr>
+           
+
+
+        
+    </table>
+    </div>
+       
+          <div class="con2">
+            <h2>February</h2>
+            <br>
+            <table id="tab2">
+                <tr id="head2">
+            <th>S </th>
+            <th>M </th>
+            <th>T </th>
+            <th>W </th>
+            <th>T </th>
+            <th>F </th>
+            <th>S </th>
+        </tr>
+<tr>
+            <td> </td>
+            <td>1 </td>
+            <td>2 </td>
+            <td>3 </td>
+            <td>4 </td>
+            <td>5 </td>
+            <td>6 </td></tr>
+           <tr> 
+            <td>7 </td>
+            <td>8 </td>
+            <td>9 </td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td></tr>
+<tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+
+            </tr>
+            
+            <tr>
+
+            
+
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+
+            </tr>
+
+           
+           <tr>
+            <td>28 </td>
+            
+            </table>
+          </div>
+
+           <div class="con3">
+    <h2>March</h2>
+    <br>
+    <table id="tab3">
+        <tr id="head3">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+</div>
+
+
+      <div class="con4">
+    <h2>April</h2>
+    <br>
+    <table id="tab4">
+        <tr id="head4">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td> </td>
+        </tr>
+    </table>
+</div>
+
+
+       <div class="con5">
+    <h2>May</h2>
+    <br>
+    <table id="tab5">
+        <tr id="head5">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+</div> 
+
+        
+       <div class="con6">
+    <h2>June</h2>
+    <br>
+    <table id="tab6">
+        <tr id="head6">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+    </table>
+</div>
+
+         <div class="con7">
+    <h2>July</h2>
+    <br>
+    <table id="tab7">
+        <tr id="head7">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+</div>
+
+        <div class="con8">
+    <h2>August</h2>
+    <br>
+    <table id="tab8">
+        <tr id="head8">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>30</td>
+           
+        </tr>
+    </table>
+</div>
+
+         <div class="con9">
+    <h2>September</h2>
+    <br>
+    <table id="tab9">
+        <tr id="head9">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+</div>
+
+        <div class="con10">
+    <h2>October</h2>
+    <br>
+    <table id="tab10">
+        <tr id="head10">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        
+    </table>
+</div> 
+         
+         <div class="con11">
+    <h2>November</h2>
+    <br>
+    <table id="tab11">
+        <tr id="head11">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+</div>
+
+        <div class="con12">
+    <h2>December</h2>
+    <br>
+    <table id="tab12">
+        <tr id="head12">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <!-- <td>31</td> -->
+        </tr>
+    </table>
+</div>
+
+    </div>
+</body>
+</html>

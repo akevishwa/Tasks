@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+
+    <style>
+       /* #main{
+            margin-left: 700px;
+
+       } */
+    </style>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <form id="form">
+            <!-- <img src="./threedoticon.png" alt="" id="icon"> -->
+            <!-- <img src="./x-mark.png" onclick="document.getElementById('main').style.display='none'" id="crossicon">
+
+            <img src="./laborpng.png" alt="">
+            <br> -->
+            <h1>Form</h1>
+            <br>
+            <br>
+            <label>Username:</label>
+            <br>
+            <input type="text" required class="box" id="uname">
+            <br>    
+            <label>Email</label>
+            <br>
+            <input type="email" required class="box" id="mail">
+            <br>
+            <label>Password</label>
+            <br>
+            <input type="password" class="box" id="password">
+            <br>
+            <label>Gender</label>
+            <br>
+            <input type="text" class="box" id="gender">
+            <br>
+             <label>Address</label>
+            <br>
+            <input type="text" class="box" id="address">
+            <br> 
+            <label>Ph no</label> 
+            <br>
+            <input type="number" class="box" id="contact">
+            <br>
+            <br>
+            <br>
+            
+        </form>
+        <input type="submit" value="submit" onclick="sample()">
+        <script>
+        
+           
+            function sample(){
+                let username = prompt("username");
+                document.getElementById("uname").value=username
+                console.log(username);
+                let email = prompt("email");
+                document.getElementById("mail").value=email
+                console.log(email);
+                let password = prompt("Password");
+                document.getElementById("password").value=password
+                console.log(password);
+                let gender = prompt("gender");
+                document.getElementById("gender").value=gender
+                console.log(gender);
+                 let address = prompt("address");
+                 document.getElementById("address").value=address
+                console.log(address);
+                 let contact = prompt("contact");
+                 document.getElementById("contact").value=contact
+                console.log(contact);
+                
+            }
+            // sample()
+
+
+        </script>
+    </div>
+
+</body>
+</html>

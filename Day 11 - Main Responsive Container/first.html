@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./icon.jpg" type="img/x-icon">
+    <title>CHAHAM</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        nav {
+            width: 100%;
+            height: 10vh;
+            background-color: brown;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        span {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+
+        .logo {
+            font-size: 25px;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: gold;
+            margin-left: 45px;
+
+        }
+
+        .ulists {
+            width: 700px;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .li {
+            list-style-type: none;
+            margin-left: 25px;
+            padding: 5px 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: gold;
+            font-size: 22px;
+            position: relative;
+        }
+
+        .link::before {
+            content: "";
+            background-color: bisque;
+            height: 4px;
+            position: relative;
+            display: inline-block;
+            bottom: -35px;
+            width: 0%;
+            transition: all 0.5s linear 0s;
+        }
+
+        .link:hover::before {
+            width: 100%;
+        }
+
+        .main {
+            background-color: beige;
+            width: 50%;
+            height: 70vh;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            margin-top: 170px;
+
+        }
+
+        article {
+            background-color: darkgray;
+            width: 50%;
+            height: 100%;
+            font-size: 20px;
+            padding: 25px;
+            border-right: 2px solid crimson;
+            text-shadow: 0px 0px 1px gold;
+            overflow: auto;
+
+        }
+
+        section {
+            width: 50%;
+            height: 100%;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Giza {
+            width: 350px;
+            height: 300px;
+            box-shadow: 2px 2px 3px 4px gold;
+        }
+
+
+        @media screen and (max-width:850px) {
+            nav {
+                position: relative;
+            }
+
+            .ulists {
+                position: absolute;
+                top: 10vh;
+                width: 100%;
+                height: auto;
+                display: block;
+                left: -100%;
+                background-color: darkslategrey;
+                transition: all 0.5s linear 0s;
+            }
+
+            .li {
+                text-align: left;
+            }
+
+            span {
+                display: flex;
+                color: white;
+                font-size: 32px;
+            }
+
+            .logo {
+                width: 150px;
+                margin-left: 30px;
+                justify-content: start;
+            }
+
+        }
+
+        @media screen and (max-width:1024px) {
+            .main {
+                height: auto;
+                background-color: beige;
+                display: block;
+            }
+
+            article {
+                width: 100%;
+            }
+
+            section {
+                width: 100%;
+                margin-top: 12px;
+            }
+
+        }
+
+        @media screen and (max-width:620px) {
+            .main {
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">CHAHAM</div>
+        <ul class="ulists" id="ulists">
+            <li class="li"><a href="" class="link">HOME</a></li>
+            <li class="li"><a href="" class="link">PRODUCTS</a></li>
+            <li class="li"><a href="" class="link">SERVICES</a></li>
+            <li class="li"><a href="" class="link">CONTACT</a></li>
+        </ul>
+        <span><i class="fa-solid fa-bars" onclick="toggle()"></i></span>
+        <script>
+            let toggled = false;
+
+            function toggle() {
+                if (!toggled) {
+                    toggled = true;
+                    document.getElementById("ulists").style.left = "0%";
+                    return
+                }
+                if (toggled) {
+                    toggled = false;
+                    document.getElementById("ulists").style.left = "-100%";
+                    return
+                }
+            }
+        </script>
+
+    </nav>
+    <main class="main">
+        <article>
+            The Egyptian pyramids are ancient masonry structures located in Egypt. Most were built as tombs for the
+            pharaohs and their consorts during the Old and Middle Kingdom periods.[1][2][3] At least 138 identified
+            pyramids have been discovered in Egypt.[4][5] Approximately 80 pyramids were built within the Kingdom of
+            Kush, now located in the modern country of Sudan.
+
+            The earliest known Egyptian pyramids are at Saqqara, west of Memphis. Step-pyramid-like structures, like
+            Mastaba 3808 attributed to pharaoh Anedjib,[6] may predate the Pyramid of Djoser built c. 2630-2610 BC
+            during the Third Dynasty.[7] This pyramid and its surrounding complex are generally considered to be the
+            world's oldest monumental structures constructed of dressed masonry.[8]
+            The most famous Egyptian pyramids are those found at Giza, on the outskirts of Cairo. Several of the Giza
+            pyramids are counted among the largest structures ever built.[9] The Pyramid of Khufu is the largest
+            Egyptian pyramid and the last of the Seven Wonders of the Ancient World still in existence, despite being
+            the oldest by about 2,000 years.[10]
+
+            Recent archeological research at Giza suggests that Fourth Dynasty pyramid construction was heavily
+            dependent on Nile-based transport. Sediment cores show evidence of a Nile-connected harbor functioning along
+            the Giza plateau during Khufu's reign. Researchers argue this port system helped large scale movement of
+            limestone blocks and other materials, highlighting the importance of waterways in Old Kingdom building
+            strategies.[11]
+        </article>
+        <section>
+            <img src="./Giza.jpg" alt="" id="Giza">
+        </section>
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAHAM</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 500px;
+            width: 300px;
+            background: linear-gradient(to right, goldenrod, chocolate);
+            margin: 60px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+        }
+
+        .f1 {
+            width: 100%;
+            height: 30%;
+        }
+
+        .f2 {
+            width: 85%;
+            height: 70%;
+            margin: auto;
+        }
+        #icon {
+            height: 35px;
+            width: 40px;
+            display: flex;
+            margin: 0%;
+        }
+
+        img {
+            height: 85px;
+            width: 80px;
+            display: flex;
+            margin: auto;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .field {
+            width: 100%;
+            height: 60px;
+        }
+
+        label {
+            display: block;
+            padding: 5px;
+        }
+
+        .box {
+            width: 100%;
+            height: 25px;
+            border-radius: 6px;
+        }
+
+        button {
+            font-size: 25px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 677px) {
+
+            .main {
+                width: 90%;
+            }
+
+            .f2 {
+                width: 90%;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <div class="f1">
+                <img src="./threedoticon.png" alt="" id="icon">
+                <img src="./laborpng.png" alt="">
+                <h1>On-Site Enquiries Form</h1>
+            </div>
+            <div class="f2">
+                <div class="field">
+                    <label>Name*:</label>
+                    <input type="text" required class="box">
+                </div>
+                <div class="field">
+                    <label>Where are you*</label>
+                    <input type="text" required class="box">
+                </div>
+                <div class="field">
+                    <label>Street address</label>
+                    <input type="text" class="box">
+                </div>
+                <div class="field">
+                    <label>Address Line 2</label>
+                    <input type="text" class="box">
+                </div>
+                <div class="field">
+                    <label>City</label>
+                    <input type="text" class="box">
+                </div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
