@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Fun</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: bisque;
+        }
+
+        .con{
+            width: 300px;
+            height: 250px;
+            background-color: darkcyan;
+            margin: 150px auto;
+            border-radius: 8px;
+            /* display: flex;
+            justify-content:start;
+            align-items: center; */
+        }
+         
+        h2{
+            text-align: center;
+            color:black;
+            font-size: 25px;
+            font-weight: 600;
+
+        }
+        button{
+            margin-left: 90px;
+            font-size: 20px;
+            border-radius: 5px;
+            color: black;
+            background-color: red;
+        }
+
+     .lb{
+        font-size: 18px;
+     }
+     .box{
+        height: 25px;
+        border-radius: 6px;
+     }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="con">
+        <form action="">
+           
+        <h2>Form Details</h2>
+         <br>
+            <br>
+            <br>
+            <label class="lb">Name : </label>
+            <input type="text" class="box" id="name1" required>
+<br>
+<br>
+                <label class="lb">  Age : </label>
+            <input type="number" class="box" id="age1"><br>
+ <br>
+            <br>
+            
+
+        <button type="button" onclick=sample()>Click</button>
+
+
+<script>
+
+
+
+const users = ["Gr","Mv","Lh","Op"]
+const uage = ["27","25","41","26"]
+
+function sample()
+{
+    let username = document.getElementById("name1").value;
+    let userage = document.getElementById("age1").value;
+
+    let user = false;
+
+    for(let i = 0; i < users.length; i++)
+    {
+        if(username == users[i] && userage == uage[i])
+        {
+            user = true;
+        }
+    }
+
+    if(user)
+    {
+        console.log("Login Succesfull");
+    }
+    else
+    {
+        console.log("Login Failed");
+    }
+}
+
+
+
+
+
+</script>
+
+
+        </form>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1</title>
+
+
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .con{
+
+            margin: 150px auto;
+            width: 500px;
+            height: 400px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:15px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color:deeppink;
+            border-radius: 12px;
+            /* transform: rotate(50deg); */
+            
+        }
+        .buttons{
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+        button{
+            font-size: 20px;
+            background-color: chocolate;
+            color:whitesmoke;
+            border-radius: 5px  ;
+        }
+
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+        <div class="con">
+            <div class="box" id="box1"></div> 
+            <div class="buttons">
+            <button onclick="start(500)">Slow</button>
+            <button onclick="start(200)">Normal</button>
+            <button onclick="start(50)">Fast </button>
+            </div>
+        </div>
+
+
+
+    <script>
+              
+              let ro = 0;
+              let breakt ;
+              
+              function mv()
+              {
+                ro+=50;
+                document.getElementById("box1").style.transform = "rotate(" + ro+"deg)";
+ 
+              }
+
+              function start(speed)
+              {
+                clearInterval(breakt);
+                breakt = setInterval(mv, speed);
+
+              }
+
+              
+
+            //   mv();
+            //   mv();
+            //   mv();
+
+
+              
+
+
+
+
+    </script>
+
+
+</body>
+</html>
