@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Temp Weekend</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;      
+         }
+
+         .maincon{
+            width: 100%;
+            /* background-color: aqua; */
+            height:auto;
+            margin:  auto;
+            display: flex;
+            /* align-items: center; */
+        
+         }
+         .left{
+            width: 60%;
+            /* background-color: burlywood; */
+            height: 100%;
+            padding: 140px;
+            /* display: flex; */
+
+            
+         }
+
+         .right{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+
+         .right img{
+            width: 80%;
+            height: 90%;
+            border-radius: 12px;
+            /* margin-left: 30px; */
+         }
+         
+         #h31{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 25px;
+            margin-left: 10px;
+            font-size: 16px;
+            display: inline-block;
+            background-color: rgba(218, 231, 253);
+            color: rgba(65, 125, 248);
+            border-radius: 20px;
+            padding: 8px 10px;
+            height: fit-content;
+         }
+         #h11{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: black;
+            margin-top: 20px;
+            
+         }
+
+         #p1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: black;
+            margin-top: 15px;
+            line-height: 1.5;
+
+         }
+
+
+         .buttons{
+            margin-top: 15px;
+            /* background-color: chartreuse; */
+            
+         }
+
+         #btn1{
+            color: whitesmoke;
+            background-color: rgba(0, 104, 252);
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            /* border: none; */
+         }
+
+         #btn2{
+            color: rgba(71, 138, 248);
+            background-color: whitesmoke;
+            font-size: 19px;
+            padding: 10px;
+            border-radius: 8px;
+
+         }
+
+         .downthings{
+            display: flex;
+           justify-content:flex-start;
+           /* align-items: start; */
+           gap: 50px;
+           margin-top: 40px;
+           /* background-color: blueviolet; */
+         }
+
+         .downthings h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;color: rgba(0, 104, 252);
+         }
+
+        .downthings p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: black;
+            margin-top: 5px;
+        }
+       
+
+
+
+
+@media screen and (max-width: 991px){
+
+    .maincon{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left{
+        /* margin-left: 80px; */
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        margin: auto;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .right img{
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .maincon{
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        margin: 15px auto;
+    }
+
+    .left{
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+    }
+
+    #h31{
+        margin-left: 0;
+    }
+
+    #h11{
+        font-size: 32px;
+    }
+
+    #p1{
+        font-size: 14px;
+    }
+
+    #p1 br{
+        display: none;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .downthings{
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .downthings h2{
+        font-size: 22px;
+    }
+
+    .downthings p{
+        font-size: 12px;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .right img{
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="maincon">
+
+ 
+        <div class="left">
+
+               <h3 id="h31">Welcome to EduTech</h3>
+          
+              <h1 id="h11">Learn Today <br>Build  Tomorrow</h1> 
+                  
+              <p id="p1">Join thousands of students and develop<br>
+                real-world skills with expert-led courses.</p>
+
+             <div class="buttons">
+                <button id="btn1">Get Started</button>
+                <button id="btn2">Watch Video</button>
+            </div>
+
+            <div class="downthings">
+                <div>
+                <h2>10K+</h2>
+                <p>Students</p>
+                </div>
+                <div>
+                <h2>50+</h2>
+                <p>Courses</p>
+</div>
+<div>
+                <h2>95%</h2>
+                <p>Success Rate </p>
+</div>
+            </div>
+        </div>
+               
+        
+        <div class="right">
+             
+            <img src="./lappic.png" alt="">
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>
