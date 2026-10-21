@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <div class="header">
+            <h2>HR Payroll Dashboard <span><i class="fa-solid fa-circle-info"></i></span></h2>
+
+
+        <div class="headerright">
+        <span><i class="fa-solid fa-arrows-rotate"></i></span>
+        <span><i class="fa-solid fa-glasses"></i></span>
+        <span><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+        <span><i class="fa-solid fa-ellipsis"></i></span>
+    </div>
+           
+        </div>
+
+
+        <div class="maincontent">
+
+            <div class="leftsection">
+
+                <div class="filters">
+                    
+
+
+                     <div class="card1">
+                        <label><b>Select Department</b></label>
+                        <br>
+                        <select class="optionbox">
+                            <option>All</option>
+                        </select>
+                        
+                     </div>
+                     <div class="card2">
+                        <label><b>Select Employees</b></label>
+                        <br>
+                        <select class="optionbox">
+                            <option>All</option>
+                        </select>
+                     </div>
+
+                     <div class="card3">
+                        <label><b>Select Month</b></label><br>
+                        <select class="optionbox">
+                            <option>All</option>
+                        </select>
+                     </div>
+                </div>
+
+                <div class="gcards">
+                  
+                    <div class="gcard1">
+                        <h4>Payroll Tax Compliance<span><i class="fa-solid fa-circle-info"></i></span></h4>
+                        <div class="gauge">
+                            <div class="circle" id="c1"></div>
+                            <h3>95.83%</h3>
+                        </div>
+                    </div>
+
+                     <div class="gcard1">
+                        <h4>Payroll Accuracy<span><i class="fa-solid fa-circle-info"></i></span></h4>
+                        <div class="gauge">
+                             <div class="circle" id="c2"></div>
+                            <h3>96.67%</h3>
+                        </div>
+                    </div>
+
+                     <div class="gcard1">
+                        <h4>Payroll Error Rate<span><i class="fa-solid fa-circle-info"></i></span></h4>
+                        <div class="gauge">
+                             <div class="circle" id="c3"></div>
+                            <h3>3.33%</h3>
+                        </div>
+                    </div>
+
+                     
+ 
+                </div>
+
+            </div>
+
+            <div class="salarychart">
+               
+                  <h3>Gross Salary Breakdown by Department</h3>
+                  <div class="bar">
+                    
+                     <label>Marketing : </label><canvas  class="c1"></canvas><br><br>
+                      <label>Finance : </label><canvas class="c2"></canvas><br><br>
+                       <label>IT : </label><canvas class="c3"></canvas><br><br>
+                        <label>Accounting : </label><canvas class="c4"></canvas><br><br>    
+                         <label>CustomerSupport : </label><canvas class="c5"></canvas><br><br>
+                          <label>Human Resources : </label><canvas class="c6"></canvas><br><br>
+                          <label>Sales</label> : <canvas class="c7"></canvas><br><br>
+                           <label>Administration :  </label><canvas class="c8"></canvas>  
+                  </div>    
+</div>
+            </div>
+
+
+        <div class="bottomsection">
+            <div class="payrollchart">
+                 <h3>Payroll Cost per Employee by Designation</h3><br>
+               <div class="paybar">
+                <label>Team lead : </label><canvas  class="c1"></canvas><br><br>
+                      <label>Senior Consultant : </label><canvas class="c2"></canvas><br><br>
+                       <label>Product Manager: </label><canvas class="c3"></canvas><br><br>
+                        <label>Consultant : </label><canvas class="c4"></canvas><br><br>
+                         <label>Techinical Lead : </label><canvas class="c5"></canvas><br><br>
+                          <label>Business Development Coordinater : </label><canvas class="c6"></canvas><br><br>
+                          <label>Software Engineer : </label> : <canvas class="c7"></canvas><br><br>
+                           <label>Account Manager :  </label><canvas class="c8"></canvas><br>  <br> 
+                           <label>Testing Engineer :  </label><canvas class="c8"></canvas><br>  <br> 
+                           <label>Human Resource Executive :  </label><canvas class="c8"></canvas><br>  <br> 
+                           <label>Receptionist :  </label><canvas class="c8"></canvas><br>  <br> 
+                           <label>Sales Engineer :  </label><canvas class="c8"></canvas><br>  <br> 
+
+               </div>
+            </div>
+
+            <div class="genderchart">
+                <h3>Employees by Gender</h3><br>
+                <h5 id="h51">Male - 50%</h5>
+                <h5 id="h52">Female - 50%</h5>
+                   <div class="piecircle">
+
+                       <!-- <div class="pie"></div> -->
+                   
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
