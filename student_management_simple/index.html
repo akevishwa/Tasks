@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Student Management</h1>
+      <p>Sampleeeee institute dashboard</p>
+    </div>
+    <button id="loadSampleBtn" class="secondary-btn">Load Sample Data</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <button class="nav-btn active" data-page="dashboard">Dashboard</button>
+      <button class="nav-btn" data-page="students">Students</button>
+      <button class="nav-btn" data-page="attendance">Attendance</button>
+      <button class="nav-btn" data-page="tasks">Tasks</button>
+      <button class="nav-btn" data-page="activities">Activities</button>
+    </aside>
+
+    <main class="main-content">
+      <section id="dashboard" class="page active">
+        <div class="page-heading">
+          <div><h2>Dashboard</h2><p>Quick view of your class</p></div>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Total Students</span><strong id="totalStudents">0</strong></article>
+          <article class="stat-card"><span>Present Today</span><strong id="presentToday">0</strong></article>
+          <article class="stat-card"><span>Pending Tasks</span><strong id="pendingTasks">0</strong></article>
+          <article class="stat-card"><span>Total Points</span><strong id="totalPoints">0</strong></article>
+        </div>
+        <div class="panel">
+          <h3>Recent Students</h3>
+          <div class="table-wrap">
+            <table><thead><tr><th>ID</th><th>Name</th><th>Course</th><th>Status</th></tr></thead>
+              <tbody id="recentStudents"></tbody></table>
+          </div>
+        </div>
+      </section>
+
+      <section id="students" class="page">
+        <div class="page-heading"><div><h2>Students</h2><p>Add and manage student details</p></div></div>
+        <div class="panel">
+          <h3 id="studentFormTitle">Add Student</h3>
+          <form id="studentForm" class="form-grid">
+            <input type="hidden" id="studentEditId">
+            <label>Student ID<input id="studentId" required placeholder="e.g. STU001"></label>
+            <label>Full Name<input id="studentName" required placeholder="Student name"></label>
+            <label>Phone<input id="studentPhone" required placeholder="Phone number"></label>
+            <label>Course<input id="studentCourse" required placeholder="e.g. Full Stack"></label>
+            <label>Batch<input id="studentBatch" required placeholder="e.g. 2026"></label>
+            <label>Status<select id="studentStatus"><option>Active</option><option>Inactive</option><option>Completed</option></select></label>
+            <div class="form-actions"><button type="submit" class="primary-btn">Save Student</button><button type="button" id="cancelStudentEdit" class="secondary-btn">Cancel</button></div>
+          </form>
+        </div>
+        <div class="panel">
+          <div class="panel-heading"><h3>Student List</h3><input id="studentSearch" class="search" placeholder="Search by ID or name"></div>
+          <div class="table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Phone</th><th>Course</th><th>Batch</th><th>Status</th><th>Actions</th></tr></thead><tbody id="studentsTable"></tbody></table></div>
+        </div>
+      </section>
+
+      <section id="attendance" class="page">
+        <div class="page-heading"><div><h2>Attendance</h2><p>Mark attendance for your students</p></div></div>
+        <div class="panel">
+          <form id="attendanceForm">
+            <label class="inline-label">Date <input type="date" id="attendanceDate" required></label>
+            <div class="table-wrap"><table><thead><tr><th>Student</th><th>Attendance</th></tr></thead><tbody id="attendanceTable"></tbody></table></div>
+            <button class="primary-btn" type="submit">Save Attendance</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="tasks" class="page">
+        <div class="page-heading"><div><h2>Tasks</h2><p>Assign and track student tasks</p></div></div>
+        <div class="panel">
+          <h3>Add Task</h3>
+          <form id="taskForm" class="form-grid">
+            <label>Student<select id="taskStudent" required></select></label>
+            <label>Task Title<input id="taskTitle" required placeholder="Enter task"></label>
+            <label>Due Date<input id="taskDueDate" type="date" required></label>
+            <label>Status<select id="taskStatus"><option>Pending</option><option>In Progress</option><option>Completed</option></select></label>
+            <div class="form-actions"><button class="primary-btn" type="submit">Add Task</button></div>
+          </form>
+        </div>
+        <div class="panel"><h3>Task List</h3><div class="table-wrap"><table><thead><tr><th>Student</th><th>Task</th><th>Due Date</th><th>Status</th><th>Action</th></tr></thead><tbody id="tasksTable"></tbody></table></div></div>
+      </section>
+
+      <section id="activities" class="page">
+        <div class="page-heading"><div><h2>Activities & Points</h2><p>Record positive or negative points</p></div></div>
+        <div class="panel">
+          <h3>Add Activity</h3>
+          <form id="activityForm" class="form-grid">
+            <label>Student<select id="activityStudent" required></select></label>
+            <label>Activity<input id="activityDescription" required placeholder="e.g. Helped a classmate"></label>
+            <label>Type<select id="activityType"><option value="Positive">Positive</option><option value="Negative">Negative</option></select></label>
+            <label>Points<input id="activityPoints" type="number" min="1" max="100" required></label>
+            <div class="form-actions"><button class="primary-btn" type="submit">Add Activity</button></div>
+          </form>
+        </div>
+        <div class="panel"><h3>Activity History</h3><div class="table-wrap"><table><thead><tr><th>Student</th><th>Activity</th><th>Type</th><th>Points</th><th>Action</th></tr></thead><tbody id="activitiesTable"></tbody></table></div></div>
+      </section>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
