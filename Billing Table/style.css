@@ -58,6 +58,13 @@ table{
 
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
+
+
+
 th ,tr {
     padding: 8px;
     /* border-collapse: collapse; */
